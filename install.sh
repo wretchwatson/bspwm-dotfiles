@@ -54,7 +54,7 @@ sudo cp 10-monitor.conf /etc/X11/xorg.conf.d/10-monitor.conf
 
 echo ""
 echo "7. Dizinler oluşturuluyor..."
-mkdir -p ~/Pictures/wallpapers
+mkdir -p ~/.local/share/wallpapers
 
 echo ""
 echo "8. Servisler etkinleştiriliyor..."

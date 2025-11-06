@@ -30,7 +30,7 @@ super + shift + {e,r}
 
 # Wallpaper değiştir
 super + shift + b
-    feh --bg-fill --randomize ~/Pictures/wallpapers/*
+    feh --bg-fill --randomize ~/.local/share/wallpapers/*
 
 # Polybar yeniden başlat
 super + ctrl + r

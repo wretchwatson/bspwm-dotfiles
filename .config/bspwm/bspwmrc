@@ -31,7 +31,7 @@ bspc rule -a mpv state=floating rectangle=1280x720+320+180 center=true
 pgrep -x sxhkd > /dev/null || sxhkd &
 pgrep -x picom > /dev/null || picom &
 pgrep -x polybar > /dev/null || ~/.config/polybar/launch.sh &
-feh --bg-fill --randomize ~/Pictures/wallpapers/* &
+feh --bg-fill --randomize ~/.local/share/wallpapers/* &
 nm-applet &
 optimus-manager-qt &
 /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &

@@ -112,7 +112,7 @@ qt6ct
 
 ### Wallpaper Ekleme
 
-Wallpaper'larınızı `~/Pictures/wallpapers/` dizinine ekleyin.
+Wallpaper'larınızı `~/.local/share/wallpapers/` dizinine ekleyin.
 
 ### Polybar Özelleştirme
 
