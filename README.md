@@ -139,7 +139,7 @@ pkill picom && picom &
 
 - NVIDIA Optimus laptop'lar için optimus-manager yapılandırılmıştır
 - Xorg monitor ayarları `/etc/X11/xorg.conf.d/10-monitor.conf` dosyasında
-- SDDM teması Greenleaf olarak ayarlanmıştır
+- SDDM teması Silent olarak ayarlanmıştır
 
 ## Lisans
 

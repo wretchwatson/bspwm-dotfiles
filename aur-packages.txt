@@ -1,7 +1,6 @@
-archlinux-themes-sddm
 celestial-gtk-theme
 fjordlauncher-bin
 google-chrome
 papirus-folders
-sddm-theme-greenleaf
+sddm-silent-theme-git
 visual-studio-code-bin
