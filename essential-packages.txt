@@ -71,6 +71,7 @@ ttf-jetbrains-mono-nerd
 
 # İkonlar
 papirus-icon-theme
+capitaine-cursors
 
 # Temalar
 qt6ct
