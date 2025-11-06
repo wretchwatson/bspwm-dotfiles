@@ -1,0 +1,42 @@
+! st terminal ayarları - Celestial Sea Dark
+st.font: JetBrainsMono Nerd Font:size=12:antialias=true:autohint=true
+
+! Renkler
+st.foreground: #ccd7d4
+st.background: #1b2224
+st.cursorColor: #2eb398
+
+! Siyah
+st.color0: #1b2224
+st.color8: #313e41
+
+! Kırmızı
+st.color1: #fc4138
+st.color9: #ff6b63
+
+! Yeşil
+st.color2: #2eb398
+st.color10: #50c9ad
+
+! Sarı
+st.color3: #f9ae58
+st.color11: #ffc97d
+
+! Mavi
+st.color4: #5ab0f6
+st.color12: #7fc8ff
+
+! Magenta
+st.color5: #ca72e4
+st.color13: #e89dff
+
+! Cyan
+st.color6: #2eb398
+st.color14: #50c9ad
+
+! Beyaz
+st.color7: #ccd7d4
+st.color15: #ffffff
+! Cursor
+Xcursor.theme: capitaine-cursors
+Xcursor.size: 24

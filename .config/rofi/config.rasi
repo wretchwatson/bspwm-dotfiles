@@ -1,0 +1,82 @@
+configuration {
+    modi: "drun,run,window";
+    show-icons: true;
+    icon-theme: "Papirus";
+    display-drun: "Uygulamalar";
+    display-run: "Komut";
+    display-window: "Pencereler";
+    drun-display-format: "{name}";
+    font: "Quicksand Medium 11";
+}
+
+* {
+    bg: #1b2224;
+    bg-alt: #313e41;
+    fg: #ccd7d4;
+    fg-alt: #abb9b6;
+    
+    primary: #2eb398;
+    urgent: #fc4138;
+    
+    background-color: transparent;
+    text-color: @fg;
+    margin: 0;
+    padding: 0;
+    spacing: 0;
+}
+
+window {
+    background-color: @bg;
+    border: 2px;
+    border-color: @primary;
+    border-radius: 4px;
+    width: 500px;
+    padding: 15px;
+}
+
+mainbox {
+    children: [inputbar, listview];
+    spacing: 20px;
+}
+
+inputbar {
+    children: [prompt, entry];
+    background-color: @bg-alt;
+    border-radius: 6px;
+    padding: 12px;
+}
+
+prompt {
+    text-color: @primary;
+    padding: 0 10px 0 0;
+}
+
+entry {
+    placeholder: "Ara...";
+    placeholder-color: @fg-alt;
+}
+
+listview {
+    lines: 6;
+    columns: 1;
+    scrollbar: false;
+}
+
+element {
+    padding: 10px;
+    border-radius: 6px;
+}
+
+element selected {
+    background-color: @primary;
+    text-color: @bg;
+}
+
+element-icon {
+    size: 24px;
+    padding: 0 10px 0 0;
+}
+
+element-text {
+    text-color: inherit;
+}

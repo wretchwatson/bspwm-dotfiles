@@ -1,0 +1,92 @@
+# sxhkd Kısayolları
+
+# Terminal
+super + Return
+    st
+
+# Uygulama başlatıcı
+super + a
+    rofi -show drun
+
+# Chrome
+super + w
+    google-chrome-stable
+
+# PCManFM-Qt
+super + e
+    pcmanfm-qt
+
+# VS Code
+super + c
+    code
+
+# Pencereyi kapat
+super + q
+    bspc node -c
+
+# bspwm çıkış/yeniden başlat
+super + shift + {e,r}
+    bspc {quit,wm -r}
+
+# Wallpaper değiştir
+super + shift + b
+    feh --bg-fill --randomize ~/Pictures/wallpapers/*
+
+# Polybar yeniden başlat
+super + ctrl + r
+    ~/.config/polybar/launch.sh
+
+# Pencere odaklama
+super + {h,j,k,l}
+    bspc node -f {west,south,north,east}
+
+super + {Left,Down,Up,Right}
+    bspc node -f {west,south,north,east}
+
+# Pencere taşıma
+super + shift + {h,j,k,l}
+    bspc node -s {west,south,north,east}
+
+super + shift + {Left,Down,Up,Right}
+    bspc node -s {west,south,north,east}
+
+# Workspace geçiş
+super + {1-9,0}
+    bspc desktop -f '^{1-9,10}'
+
+# Son iki workspace arasında geçiş (Alt+Tab)
+alt + Tab
+    bspc desktop -f last
+
+# Pencereyi workspace'e taşı
+super + shift + {1-9,0}
+    bspc node -d '^{1-9,10}'
+
+# Fullscreen toggle
+super + f
+    bspc node -t ~fullscreen
+
+# Floating toggle
+super + shift + space
+    bspc node -t ~floating
+
+# Layout değiştir
+super + {t,shift + t,s}
+    bspc node -t {tiled,pseudo_tiled,floating}
+
+# Pencere boyutlandır
+super + alt + {h,j,k,l}
+    bspc node -z {left -20 0,bottom 0 20,top 0 -20,right 20 0}
+
+super + alt + shift + {h,j,k,l}
+    bspc node -z {right -20 0,top 0 20,bottom 0 -20,left 20 0}
+
+# Ses kontrolleri
+XF86AudioRaiseVolume
+    pactl set-sink-volume @DEFAULT_SINK@ +10%
+
+XF86AudioLowerVolume
+    pactl set-sink-volume @DEFAULT_SINK@ -10%
+
+XF86AudioMute
+    pactl set-sink-mute @DEFAULT_SINK@ toggle

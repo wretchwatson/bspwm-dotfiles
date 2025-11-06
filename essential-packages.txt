@@ -1,0 +1,108 @@
+# Ağ
+networkmanager
+network-manager-applet
+
+# Ses
+pipewire
+pipewire-alsa
+pipewire-pulse
+pavucontrol
+
+# Display Manager
+sddm
+
+# X11 ve Görüntü
+xorg-fonts-encodings
+xorg-server
+xorg-server-common
+xorg-server-devel
+xorg-setxkbmap
+xorg-xauth
+xorg-xdpyinfo
+xorg-xinit
+xorg-xinput
+xorg-xkbcomp
+xorg-xkill
+xorg-xmodmap
+xorg-xprop
+xorg-xrandr
+xorg-xrdb
+xorg-xset
+xorg-xsetroot
+xorgproto
+mesa
+nvidia-390xx-dkms
+nvidia-390xx-utils
+nvidia-390xx-settings
+lib32-nvidia-390xx-utils
+opencl-nvidia
+optimus-manager-git
+optimus-manager-qt
+
+# Window Manager ve Compositor
+bspwm
+sxhkd
+picom
+
+# Panel ve Bildirimler
+polybar
+dunst
+
+# Uygulama Başlatıcı
+rofi
+
+# Dosya Yöneticisi
+pcmanfm-qt
+
+# Terminal
+st
+
+# Wallpaper
+feh
+
+# Polkit
+polkit-gnome
+
+# Fontlar
+noto-fonts
+noto-fonts-cjk
+noto-fonts-emoji
+ttf-jetbrains-mono-nerd
+
+# İkonlar
+papirus-icon-theme
+
+# Temalar
+qt6ct
+nwg-look
+
+# Araçlar
+git
+curl
+wget
+fastfetch
+fd
+ntfs-3g
+gnome-disk-utility
+gnome-keyring
+seahorse
+gvfs
+gvfs-smb
+zip
+unzip
+unrar
+xdg-user-dirs
+xcolor
+python-pip
+python-psutil
+nano
+mpv
+micro
+mesa-utils
+inxi
+intel-ucode
+htop
+gtk2
+gtk3
+gtk4
+yt-dlp

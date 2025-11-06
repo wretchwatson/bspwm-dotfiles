@@ -1,0 +1,41 @@
+#!/bin/sh
+
+# Qt tema
+export QT_QPA_PLATFORMTHEME=qt6ct
+
+# Monitör ve workspace ayarları
+# Sadece HDMI monitörü kullan
+xrandr --output HDMI-1-1 --mode 1920x1080 --primary --output VGA-0 --off --output LVDS-1-1 --off
+bspc monitor HDMI-1-1 -d 1 2 3 4 5 6 7 8 9 10
+
+# Pencere ayarları
+bspc config border_width          2
+bspc config window_gap            1
+bspc config split_ratio           0.52
+bspc config borderless_monocle    true
+bspc config gapless_monocle       true
+bspc config focus_follows_pointer true
+
+# Renkler - Celestial Sea Dark
+bspc config focused_border_color  "#2eb398"
+bspc config normal_border_color   "#313e41"
+bspc config active_border_color   "#313e41"
+bspc config presel_feedback_color "#2eb398"
+
+# Pencere kuralları
+bspc rule -a pavucontrol state=floating rectangle=600x480+660+300 center=true
+bspc rule -a FjordLauncher state=floating rectangle=720x540+600+270 center=true
+bspc rule -a mpv state=floating rectangle=1280x720+320+180 center=true
+
+# Başlangıç uygulamaları
+pgrep -x sxhkd > /dev/null || sxhkd &
+pgrep -x picom > /dev/null || picom &
+pgrep -x polybar > /dev/null || ~/.config/polybar/launch.sh &
+feh --bg-fill --randomize ~/Pictures/wallpapers/* &
+nm-applet &
+optimus-manager-qt &
+/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
+pgrep -x dunst > /dev/null || dunst &
+
+# Cursor
+xsetroot -cursor_name left_ptr &
