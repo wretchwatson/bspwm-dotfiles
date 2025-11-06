@@ -4,3 +4,4 @@ fjordlauncher-bin
 google-chrome
 papirus-folders
 sddm-theme-greenleaf
+visual-studio-code-bin
